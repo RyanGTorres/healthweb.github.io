@@ -94,3 +94,9 @@ section {
     width: 100%;
     
 }
+@media screen and (max-width: 1020px) {
+    #banner {
+        flex-direction: row;
+        width: 300px;
+    }
+}

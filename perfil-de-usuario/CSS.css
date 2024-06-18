@@ -135,4 +135,20 @@ footer {
     text-align: center;
     border-radius: 0 0 10px 10px;
 }
-
+@media screen and (max-width: 550px){
+    .charts-section {
+        display: block;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    
+    .chart-container {
+        width: 80%;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}

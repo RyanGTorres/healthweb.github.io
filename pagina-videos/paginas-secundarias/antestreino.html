@@ -28,6 +28,39 @@ crossorigin="anonymous"></script>
     display: flex;
     justify-content: center;  
     padding: 20px;
+    
+}
+
+.colu {
+    place-self: center;
+    width: 60vw;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 0px lightgray;
+    background-color: white;
+}
+
+.containe {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+.video-principal {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+.video-principal > iframe {
+    position: absolute;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+#rodape {
+    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
 }
 </style>
 </head>
@@ -55,11 +88,16 @@ crossorigin="anonymous"></script>
     </div>
 </nav>
 <h2>Alongamento para antes do treino</h2>
-<iframe class="video-1" width="1200" height="600"
-src="https://www.youtube-nocookie.com/embed/qGFPYY-yb_0?si=8aBUun4hSNnBvWkO"
-title="YouTube video player" frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<a id="botao" href="/videos.html"><img src="imagen-sec/botao.png" alt="Seta para voltar"></a>
+<div class="containe">
+    <div class="colu">
+      <div class="video-principal">
+      <iframe src="https://www.youtube.com/embed/qGFPYY-yb_0?si=d3l2Ry4roOnkuyBY"></iframe>
+      </div>
+    </div>
+  </div>
+<a id="botao" href="/pagina-videos/videos.html"><img src="imagen-sec/botao.png" alt="Seta para voltar"></a>
 </body>
+<footer id="rodape" class="p-4 bg-primary text-white text-center  py-1">
+    Todos os direitos reservados.
+  </footer>
 </html>
