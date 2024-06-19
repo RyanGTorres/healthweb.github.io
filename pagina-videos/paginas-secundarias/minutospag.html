@@ -24,36 +24,60 @@ crossorigin="anonymous"></script>
     display: flex;
     justify-content: center;  
     }
+    #navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #1d1d1dad;
+    font-weight: 600;
+}
+
+.nav-item.active a {
+    color: var(--color-neutral-1);
+    border-bottom: 3px solid var(--color-primary-4);
+}
+
 #botao{
     display: flex;
     justify-content: center;  
     padding: 20px;
 }
+#rodape {
+    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
 </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-primary navbar-primary py-2">
-    <div class="container-fluid">
-        <a class="navbar-brand fs-3 text-light" href="#">Health Web</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar"></button>
-        <div class="collapse navbar-collapse" id="menuNavbar">
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-                <a class="nav-link active text-light" aria-current="page" href="/videos.html">Vídeos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-light" href="#">Ínicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-light" href="#">Receita</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-light" href="#">Meu perfil</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg bg-primary navbar-primary py-2">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-3 text-light" href="/index.html">Health Web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar"></button>
+            <div class="collapse navbar-collapse" id="menuNavbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="/videos.html">Vídeos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-light" href="/index.html">Ínicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="/paola-pft-sem-react/Receita do dia/index.html">Alimentação</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="/perfil-de-usuario/HTML.html">Meu perfil</a>
+                </li>
+            </ul>
+            </div>
         </div>
-    </div>
-</nav>
 <h2>10 Minutos de alongamento</h2>
 <iframe class= "video-1" width="1200" height="600" src="https://www.youtube-nocookie.com/embed/ALrxeixOMPg?si=e0IWi6LkS0WOcVqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <a id="botao" href="/videos.html"><img src="imagen-sec/botao.png" alt="Seta para voltar"></a>

@@ -63,10 +63,7 @@
         font-size: 2.5rem;
     }
 
-    #testimonial_chef {
-        display: none;
-    }
-
+ 
     #testimonials_content {
         width: 70%;
         display: flex;
@@ -88,3 +85,6 @@
         flex-direction: column;
     }
 } 
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+ 
+}
